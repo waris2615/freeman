@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedman Broker Insurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Minimal custom styling, mostly relying on Tailwind */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff; /* Clean white background */
+            color: #333333;
+        }
+        .hero-bg {
+            background-color: #f8fafc; /* Very light slate for contrast against white cards */
+        }
+        .text-brand-blue {
+            color: #1e3a8a; /* Deep blue often associated with trust/insurance */
+        }
+        .bg-brand-blue {
+            background-color: #1e3a8a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-brand-blue tracking-tight">
+                        Freedman Broker Insurance
+                    </a>
+                </div>
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">About Us</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-blue font-medium transition-colors">Contact</a>
+                </nav>
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center">
+                    <a href="#quote" class="bg-brand-blue hover:bg-blue-800 text-white px-6 py-2 rounded-md font-medium transition-colors shadow-sm">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 lg:pr-12 text-center lg:text-left mb-12 lg:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Insurance made easy. <br>
+                    <span class="text-brand-blue">We're the Experts.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    At Freedman Broker Insurance, we don't just see account numbers. We take the time to understand your unique needs and find the perfect coverage tailored for you, your family, and your business.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#services" class="bg-brand-blue hover:bg-blue-800 text-white px-8 py-3 rounded-md font-semibold text-lg transition-colors shadow-md">
+                        Explore Coverage
+                    </a>
+                    <a href="#contact" class="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 px-8 py-3 rounded-md font-semibold text-lg transition-colors">
+                        Contact an Advisor
+                    </a>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Family meeting with insurance broker" class="rounded-xl shadow-2xl w-full object-cover h-[400px] lg:h-[500px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Cards Section (Inspired by Brokerforce grid) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Comprehensive Insurance Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide tailored policies to protect what matters most to you.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542314831-c6a4d14bdc4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Car" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Auto Insurance</h3>
+                        <p class="text-gray-600 mb-6">Hit the road with confidence. We offer competitive rates and comprehensive coverage for your vehicles.</p>
+                        <a href="#quote" class="text-brand-blue font-semibold hover:underline flex items-center">
+                            Request a Quote <span class="ml-2">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="House" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Home & Property</h3>
+                        <p class="text-gray-600 mb-6">Protect your biggest asset. Policies tailored for homeowners, renters, and condo owners.</p>
+                        <a href="#quote" class="text-brand-blue font-semibold hover:underline flex items-center">
+                            Request a Quote <span class="ml-2">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Business Office" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Commercial Liability</h3>
+                        <p class="text-gray-600 mb-6">Safeguard your business operations, employees, and assets against everyday operational risks.</p>
+                        <a href="#quote" class="text-brand-blue font-semibold hover:underline flex items-center">
+                            Request a Quote <span class="ml-2">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">We Don’t See Numbers, We See You.</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Unlike traditional insurance brokers who might view you as just another account, Freedman Broker Insurance takes the time to get to know you personally. 
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We pride ourselves on honest communication, transparent pricing, and treating our clients like family. Discover the difference of having an advocate on your side when you need it most.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Personalized Service
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Competitive Market Rates
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Dedicated Claims Support
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Friendly team member" class="rounded-xl shadow-lg w-full object-cover h-[450px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-6">Freedman Broker Insurance</h3>
+                    <p class="text-gray-400 mb-6">Providing reliable and tailored insurance solutions for individuals and businesses.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Contact Us</h4>
+                    <p class="text-gray-400 mb-2"><strong>Phone:</strong> <a href="tel:1-800-555-0199" class="hover:text-white transition-colors">1-800-555-0199</a></p>
+                    <p class="text-gray-400 mb-2"><strong>Email:</strong> <a href="mailto:info@freedmanbrokerinsurance.com" class="hover:text-white transition-colors">info@freedmanbrokerinsurance.com</a></p>
+                    <p class="text-gray-400 mt-4">123 Insurance Avenue<br>Suite 400<br>Toronto, ON M1M 1M1</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Auto Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Commercial Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2024 Freedman Broker Insurance. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <!-- Social placeholders -->
+                    <a href="#" class="text-gray-500 hover:text-white">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-white">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
