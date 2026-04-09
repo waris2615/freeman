@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -149,7 +150,7 @@
     </div>
 
     <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div class="flex flex-col lg:flex-row gap-16 items-center mb-24">
+        <div class="flex flex-col lg:flex-row gap-16 items-center mb-24" data-aos="fade-up">
             <div class="lg:w-1/2">
                 <div class="relative p-6 bg-white shadow-2xl rounded-sm border border-gray-100">
                     <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Boardroom" class="rounded-sm w-full h-[500px] object-cover grayscale">
@@ -173,7 +174,7 @@
         </div>
         
         <!-- Leadership Section -->
-        <div class="mb-24">
+        <div class="mb-24" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-brand-navy heading-serif mb-4">Leadership</h2>
                 <div class="w-16 h-0.5 bg-brand-gold mx-auto"></div>
@@ -199,7 +200,7 @@
         </div>
 
         <!-- Core Values Grid -->
-        <div class="bg-brand-navy text-white rounded-sm p-12 md:p-16 shadow-2xl relative overflow-hidden">
+        <div class="bg-brand-navy text-white rounded-sm p-12 md:p-16 shadow-2xl relative overflow-hidden" data-aos="fade-up">
             <div class="absolute -left-20 -top-20 opacity-5">
                 <i class="fas fa-landmark text-[20rem]"></i>
             </div>
@@ -209,21 +210,21 @@
                     <div class="w-16 h-0.5 bg-brand-gold mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="0">
                         <div class="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-6 bg-brand-navy">
                             <i class="fas fa-gem text-brand-gold text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold heading-serif mb-3">Excellence</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">We demand perfection in policy architecture, leaving no exposure unaddressed and no detail overlooked.</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="100">
                         <div class="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-6 bg-brand-navy">
                             <i class="fas fa-handshake text-brand-gold text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold heading-serif mb-3">Integrity</h3>
                         <p class="text-gray-400 text-sm leading-relaxed">Absolute transparency in pricing, coverage limitations, and carrier relationships. We serve only you.</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-delay="200">
                         <div class="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-6 bg-brand-navy">
                             <i class="fas fa-shield-alt text-brand-gold text-2xl"></i>
                         </div>
@@ -310,5 +311,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
 </body>
 </html>

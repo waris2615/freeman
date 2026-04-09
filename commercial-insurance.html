@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -149,7 +150,7 @@
     </div>
 
     <!-- Industry Expertise -->
-    <section class="py-16 bg-brand-light border-b border-gray-200">
+    <section class="py-16 bg-brand-light border-b border-gray-200" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 class="text-center text-sm font-semibold uppercase tracking-widest text-brand-navy mb-10">Specialized Industry Practices</h3>
             <div class="flex flex-wrap justify-center gap-4">
@@ -165,7 +166,7 @@
     <!-- Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-24" data-aos="fade-up">
             <div class="lg:col-span-1">
                 <h2 class="text-4xl font-bold text-brand-navy heading-serif mb-6">Enterprise Risk Management</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">We do not simply sell policies; we engineer holistic risk architectures. Our commercial team conducts exhaustive audits of your operational exposures to design defenses that protect your balance sheet and satisfy board-level scrutiny.</p>
@@ -179,25 +180,25 @@
             </div>
             
             <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-                <div id="liability" class="border-t-2 border-brand-gold pt-6">
+                <div id="liability" class="border-t-2 border-brand-gold pt-6" data-aos="fade-up" data-aos-delay="0">
                     <div class="w-10 h-10 bg-brand-light text-brand-navy rounded flex items-center justify-center text-lg mb-4"><i class="fas fa-balance-scale"></i></div>
                     <h3 class="text-2xl font-bold text-brand-navy heading-serif mb-3">General Liability & D&O</h3>
                     <p class="text-gray-600 mb-4 text-sm leading-relaxed">Protect your balance sheet from litigation. We craft robust liability shields including Directors & Officers, Errors & Omissions, and comprehensive Cyber Liability protection.</p>
                 </div>
 
-                <div id="property" class="border-t-2 border-brand-gold pt-6">
+                <div id="property" class="border-t-2 border-brand-gold pt-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-10 h-10 bg-brand-light text-brand-navy rounded flex items-center justify-center text-lg mb-4"><i class="fas fa-building"></i></div>
                     <h3 class="text-2xl font-bold text-brand-navy heading-serif mb-3">Commercial Property</h3>
                     <p class="text-gray-600 mb-4 text-sm leading-relaxed">Comprehensive coverage for real estate portfolios, manufacturing facilities, and corporate headquarters against physical loss, equipment breakdown, and business interruption.</p>
                 </div>
 
-                <div id="contractors" class="border-t-2 border-brand-gold pt-6">
+                <div id="contractors" class="border-t-2 border-brand-gold pt-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-10 h-10 bg-brand-light text-brand-navy rounded flex items-center justify-center text-lg mb-4"><i class="fas fa-hard-hat"></i></div>
                     <h3 class="text-2xl font-bold text-brand-navy heading-serif mb-3">Contractors & Development</h3>
                     <p class="text-gray-600 mb-4 text-sm leading-relaxed">Wrap-up liability, course of construction, and rigorous surety bonding solutions tailored for large-scale development projects and elite trade contractors.</p>
                 </div>
 
-                 <div id="fleet" class="border-t-2 border-brand-gold pt-6">
+                 <div id="fleet" class="border-t-2 border-brand-gold pt-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-10 h-10 bg-brand-light text-brand-navy rounded flex items-center justify-center text-lg mb-4"><i class="fas fa-truck"></i></div>
                     <h3 class="text-2xl font-bold text-brand-navy heading-serif mb-3">Commercial Fleet</h3>
                     <p class="text-gray-600 mb-4 text-sm leading-relaxed">Optimized fleet insurance programs offering extensive liability limits, cargo protection, and streamlined claims management to keep your logistics network moving.</p>
@@ -208,7 +209,7 @@
     </main>
     
     <!-- CTA Banner -->
-    <section class="bg-gray-100 py-16 border-t border-gray-200">
+    <section class="bg-gray-100 py-16 border-t border-gray-200" data-aos="fade-up">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h2 class="text-3xl font-bold text-brand-navy heading-serif mb-6">Ready to secure your enterprise?</h2>
             <p class="text-gray-600 mb-8 text-lg">Request a confidential, comprehensive audit of your current commercial policies.</p>
@@ -291,5 +292,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
 </body>
 </html>

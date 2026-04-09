@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -149,10 +150,10 @@
     </div>
 
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-16">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-16" data-aos="fade-up">
             
             <!-- Contact Info -->
-            <div class="lg:col-span-2">
+            <div class="lg:col-span-2" data-aos="fade-right" data-aos-delay="100">
                 <div class="bg-white p-10 shadow-xl rounded-sm border border-gray-100 h-full">
                     <h3 class="text-2xl font-bold text-brand-navy heading-serif mb-8">Executive Office</h3>
                     
@@ -183,7 +184,7 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="lg:col-span-3">
+            <div class="lg:col-span-3" data-aos="fade-left" data-aos-delay="100">
                 <form class="bg-white p-10 shadow-xl rounded-sm border border-gray-100">
                     <h2 class="text-2xl font-bold text-brand-navy heading-serif mb-8">Request a Portfolio Review</h2>
                     
@@ -308,5 +309,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
 </body>
 </html>
