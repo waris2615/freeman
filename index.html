@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -140,7 +141,7 @@
 
     
     <!-- Hero Section -->
-    <section class="relative bg-brand-navy min-h-[85vh] flex items-center">
+    <section class="relative bg-brand-navy min-h-[85vh] flex items-center" data-aos="fade-up">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Corporate Architecture" class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent"></div>
@@ -171,23 +172,23 @@
     </section>
 
     <!-- Stats Banner (The Freedman Difference) -->
-    <section class="bg-brand-navy border-t border-gray-800 py-12 relative overflow-hidden">
+    <section class="bg-brand-navy border-t border-gray-800 py-12 relative overflow-hidden" data-aos="fade-up">
         <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-800">
-                <div>
+                <div data-aos="fade-up" data-aos-delay="0">
                     <p class="text-4xl md:text-5xl font-bold text-brand-gold heading-serif mb-2">35<span class="text-2xl">+</span></p>
                     <p class="text-xs uppercase tracking-widest text-gray-400">Years Heritage</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <p class="text-4xl md:text-5xl font-bold text-brand-gold heading-serif mb-2">$4<span class="text-2xl">B</span></p>
                     <p class="text-xs uppercase tracking-widest text-gray-400">Assets Protected</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <p class="text-4xl md:text-5xl font-bold text-brand-gold heading-serif mb-2">98<span class="text-2xl">%</span></p>
                     <p class="text-xs uppercase tracking-widest text-gray-400">Client Retention</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <p class="text-4xl md:text-5xl font-bold text-brand-gold heading-serif mb-2">24<span class="text-2xl">/7</span></p>
                     <p class="text-xs uppercase tracking-widest text-gray-400">Concierge Claims</p>
                 </div>
@@ -196,7 +197,7 @@
     </section>
 
     <!-- Expertise Section -->
-    <section class="py-24 bg-brand-light">
+    <section class="py-24 bg-brand-light" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs block mb-4">Our Expertise</span>
@@ -206,7 +207,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
                 <!-- Personal Card -->
-                <div class="group cursor-pointer" onclick="window.location.href='personal-insurance.html'">
+                <div class="group cursor-pointer" onclick="window.location.href='personal-insurance.html'" data-aos="fade-right" data-aos-delay="100">
                     <div class="relative h-80 overflow-hidden rounded-sm mb-6 shadow-xl">
                         <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Luxury Home" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -221,7 +222,7 @@
                 </div>
 
                 <!-- Commercial Card -->
-                <div class="group cursor-pointer" onclick="window.location.href='commercial-insurance.html'">
+                <div class="group cursor-pointer" onclick="window.location.href='commercial-insurance.html'" data-aos="fade-left" data-aos-delay="100">
                     <div class="relative h-80 overflow-hidden rounded-sm mb-6 shadow-xl">
                         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Corporate Office" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -239,7 +240,7 @@
     </section>
 
     <!-- The Concierge Approach -->
-    <section class="py-24 bg-white border-y border-gray-100">
+    <section class="py-24 bg-white border-y border-gray-100" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs block mb-4">Our Methodology</span>
@@ -280,7 +281,7 @@
     </section>
 
     <!-- Featured Capability (Image + Text) -->
-    <section class="bg-brand-navy text-white">
+    <section class="bg-brand-navy text-white" data-aos="fade-left">
         <div class="flex flex-col lg:flex-row">
             <div class="lg:w-1/2 h-96 lg:h-auto relative min-h-[400px]">
                 <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Executive Meeting" class="absolute inset-0 w-full h-full object-cover grayscale mix-blend-multiply opacity-50">
@@ -303,7 +304,7 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section class="py-24 bg-brand-light border-b border-gray-200">
+    <section class="py-24 bg-brand-light border-b border-gray-200" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-brand-gold font-medium tracking-[0.2em] uppercase text-xs block mb-4">Client Relations</span>
@@ -311,7 +312,7 @@
                 <div class="w-16 h-0.5 bg-brand-gold mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="p-8 bg-white border border-gray-100 shadow-sm relative">
+                <div class="p-8 bg-white border border-gray-100 shadow-sm relative" data-aos="fade-up" data-aos-delay="0">
                     <i class="fas fa-quote-left text-brand-gold/20 text-5xl absolute top-4 left-4"></i>
                     <p class="text-gray-600 relative z-10 mb-6 italic leading-relaxed">"Their handling of our corporate liability portfolio is nothing short of exceptional. The proactive risk management insights provided by Freedman Broker have been invaluable to our expansion."</p>
                     <div class="flex items-center">
@@ -322,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 shadow-sm relative">
+                <div class="p-8 bg-white border border-gray-100 shadow-sm relative" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-quote-left text-brand-gold/20 text-5xl absolute top-4 left-4"></i>
                     <p class="text-gray-600 relative z-10 mb-6 italic leading-relaxed">"Securing our estate and private collection was handled with absolute discretion and unmatched expertise. They understand the nuances of high-value asset protection perfectly."</p>
                     <div class="flex items-center">
@@ -333,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="p-8 bg-white border border-gray-100 shadow-sm relative">
+                <div class="p-8 bg-white border border-gray-100 shadow-sm relative" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-quote-left text-brand-gold/20 text-5xl absolute top-4 left-4"></i>
                     <p class="text-gray-600 relative z-10 mb-6 italic leading-relaxed">"When a fire threatened our manufacturing facility, Freedman's claims advocacy team stepped in immediately. They managed the entire process, minimizing our downtime significantly."</p>
                     <div class="flex items-center">
@@ -349,7 +350,7 @@
     </section>
 
     <!-- Market Insights (News) -->
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-white" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-end mb-16 border-b border-gray-200 pb-6">
                 <div>
@@ -387,7 +388,7 @@
     </section>
 
     <!-- Trust Banner -->
-    <section class="py-16 bg-gray-50 border-t border-gray-200">
+    <section class="py-16 bg-gray-50 border-t border-gray-200" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-10">Underwritten by Premier Partners</p>
             <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
@@ -470,5 +471,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+    </script>
 </body>
 </html>
